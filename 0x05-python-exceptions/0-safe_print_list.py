@@ -1,11 +1,8 @@
 #!/usr/bin/python3
-def safe_print_list(my_list=[], x=0):
-    counter = 0
+def safe_print_integer(value):
     try:
-        while counter < x:
-            print("{}".format(my_list[counter]), end="")
-            counter += 1
+        print("{:d}".format(value))
     except Exception:
-        pass
-    print("")
-    return counter
+        return False
+    else:
+        return True
