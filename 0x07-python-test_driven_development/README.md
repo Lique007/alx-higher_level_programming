@@ -1,1 +1,1 @@
-a project about test driven development for python
+a  project about python tests  
