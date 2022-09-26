@@ -1,29 +1,20 @@
 #!/usr/bin/python3
 """
-Module contains a square class that inherits from the imported geometery
-module
+This program create a Square from a Rectangle
 """
 
 
-BaseGeometry = __import__("7-base_geometry").BaseGeometry
+Rectangle = __import__('9-rectangle').Rectangle
 
 
-class Square(BaseGeometry):
-    """
-    Square class calculates the area of a square
-    """
+class Square(Rectangle):
+    """Class Squared based from Rectangle"""
     def __init__(self, size):
-        """
-       function initializes the square by first validating the passed in
-       size value
-       args:
-           size: the size of the sides of a square
-       """
+        """Constructor of Square"""
         self.integer_validator("size", size)
         self.__size = size
+        super().__init__(size, size)
 
     def area(self):
-        """
-       area function calculate the area of a square
-        """
-        return self.__size * self.__size
+        """Calculate the area of a Square"""
+        return self.__size ** 2
