@@ -1,14 +1,14 @@
 #!/usr/bin/python3
 """
-Validate if a class inherits from a_class
+This module contains the function is_kind_of_class that accepts
+2 parameters where the first object parameter is used to check if its a
+kind of the second class paramter
 """
 
 
-def inherits_from(obj, a_class):
+def is_kind_of_class(obj, a_class):
     """
-    Returns True if the object is an instance of a class that inherited
-    (directly or indirectly) from the specified class; otherwise False.
+    function is_kind_of_class uses builtin fcuntion isinstance() function
+    to determine if a given object is an kind of a specified class
     """
-    if type(obj) == a_class:
-        return (False)
     return isinstance(obj, a_class)
