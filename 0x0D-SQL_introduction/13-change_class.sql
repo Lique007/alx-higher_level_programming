@@ -1,2 +1,2 @@
 -- remove all records with a score <= 5
-FROM second_table DROP score <= 5;
+DELETE FROM second_table WHERE score <= 5;
