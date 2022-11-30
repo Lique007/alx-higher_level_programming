@@ -7,5 +7,5 @@ if (argvLength <= 0) {
 } else if (argvLength === 1) {
   console.log('Argument found');
 } else {
-  console.log('Argument found');
+  console.log('Arguments found');
 }
